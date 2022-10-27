@@ -6,7 +6,7 @@ metadata:
 spec:
   dependsOn:
   - name: kust-common
-  interval: 1m40s
+  interval: 10s
   path: ./dev/nginx-app
   prune: true
   sourceRef:
