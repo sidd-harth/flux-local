@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: GitRepository
+metadata:
+  name: prod-source-private-repo
+  namespace: flux-system
+spec:
+  interval: 10s
+  ref:
+    branch: main
+  url: ssh://git@github.com/sidd-harth/flux-repo-per-env.git
